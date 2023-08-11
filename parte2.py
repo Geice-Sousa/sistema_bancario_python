@@ -1,7 +1,9 @@
 # função lista usuário
 def lista_usuarios(contas):
     for conta in contas:
-        print(f'''\n Agência: {conta['agencia']} \n Conta Corrente: {conta['numero_conta']} \n Titular: {conta['usuario']['nome']}''')
+        print(f'''
+    \n Agência: {conta['agencia']} \n Conta Corrente: {conta['numero_conta']} \n Titular: {conta['usuario']['nome']}
+''')
 
 # função verifica cpf
 def verifica_usuario(cpf, usuarios):
@@ -96,9 +98,9 @@ def exibe_extrato(saldo, /, *, extrato):
     print(f'Seu saldo é R${saldo:.2f}')
 
 def main():
+    AGENCIA = '0001'
     SAQUE_MAXIMO = 500
     LIMITE_SAQUES = 3
-    AGENCIA: '0001'
     saldo = 0
     qtd_saques = 0
     extrato = 'Nenhuma operação realizada'
@@ -139,7 +141,9 @@ def main():
                 contas.append(conta)
 
         elif opcao == '6':
-            print(lista_usuarios(contas))
+            # print(lista_usuarios(contas))
+            print('_*_Em construção_*_')
+
 
         elif opcao == '0':
             print('Até mais ver!')
