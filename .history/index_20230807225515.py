@@ -44,7 +44,7 @@ while True:
             
         elif qtd_saques >= LIMITE_SAQUES:
             print(f'Você já excedeu o limite de saques mensal.')  
-    
+          
         elif valor_sacado < SAQUE_MAXIMO and valor_sacado <= saldo and valor_sacado > 0 :
             saldo -= valor_sacado
             extrato += f'Saque efetuado: R${valor_sacado:.2f}.\n'

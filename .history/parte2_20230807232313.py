@@ -1,13 +1,29 @@
-menu = '''
-========= OPÇÕES =========
+# criar funções para cada opção
+# 1. função saque: apenas argumentos nomeados, parâmetros: saldo, valor, extrato, limite, numero_saques, limite_saques; retornar saldo e extrato
 
-    [1] Depositar
-    [2] Sacar
-    [3] Extrato
-    [0] Sair
+# 2. função deposito: args por posição saldo, valor e extrato, retorna estarto e saldo
 
-==========================  
-Opção selecionada => '''
+# 3. extrato ambos args, args pos sado, ars nom extrato
+
+# 4. criar usuário: usauários armazenados em uma lista, possui: nome, data_de_nascimento, CPF, endereco: {logradouro, nro, bairro, cidade/est}
+# cada cpf deve ser cadatrado uma única vez e apenas números
+
+# 5. criar conta: nº da agencia 0001
+
+
+def opcoes():
+    menu = '''
+    ========= OPÇÕES =========
+
+        [1] Depositar
+        [2] Sacar
+        [3] Extrato
+        [0] Sair
+
+    ==========================  
+    Opção selecionada => '''
+
+    return input(menu)
 
 # variáveis
 
@@ -19,7 +35,7 @@ extrato = ''
 deposito = 0
 
 while True:
-    opcao = input(menu)
+    opcoes()
 
     if opcao == '1':
         print('vc escolheu a opção depósito')
